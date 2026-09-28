@@ -1,0 +1,85 @@
+{
+  "best_model": "Random Forest",
+  "n_train": 16512,
+  "n_test": 4128,
+  "baseline_model": "Linear Regression",
+  "baseline_rmse": 0.6629,
+  "best_rmse": 0.5084,
+  "rmse_improvement_pct_over_baseline": 23.31,
+  "results": {
+    "Linear Regression": {
+      "rmse": 0.6629,
+      "mae": 0.4782,
+      "r2": 0.6646,
+      "cv_rmse": 0.6526,
+      "train_rmse": 0.6521,
+      "overfit_gap": -0.0005
+    },
+    "Ridge": {
+      "rmse": 0.6629,
+      "mae": 0.4782,
+      "r2": 0.6646,
+      "cv_rmse": 0.6526,
+      "train_rmse": 0.6521,
+      "overfit_gap": -0.0005
+    },
+    "Lasso": {
+      "rmse": 0.6629,
+      "mae": 0.4782,
+      "r2": 0.6646,
+      "cv_rmse": 0.6525,
+      "train_rmse": 0.6521,
+      "overfit_gap": -0.0004
+    },
+    "Random Forest": {
+      "rmse": 0.5084,
+      "mae": 0.3323,
+      "r2": 0.8028,
+      "cv_rmse": 0.51,
+      "train_rmse": 0.2465,
+      "overfit_gap": -0.2635
+    }
+  },
+  "feature_importance_rf": [
+    {
+      "feature": "MedInc",
+      "importance": 0.4103
+    },
+    {
+      "feature": "AveOccup",
+      "importance": 0.0975
+    },
+    {
+      "feature": "Latitude",
+      "importance": 0.0961
+    },
+    {
+      "feature": "BedroomsPerRoom",
+      "importance": 0.093
+    },
+    {
+      "feature": "Longitude",
+      "importance": 0.0913
+    },
+    {
+      "feature": "RoomsPerHousehold",
+      "importance": 0.0788
+    },
+    {
+      "feature": "HouseAge",
+      "importance": 0.0514
+    },
+    {
+      "feature": "AveRooms",
+      "importance": 0.0381
+    },
+    {
+      "feature": "Population",
+      "importance": 0.0226
+    },
+    {
+      "feature": "AveBedrms",
+      "importance": 0.021
+    }
+  ]
+}
