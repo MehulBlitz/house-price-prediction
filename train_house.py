@@ -27,6 +27,7 @@ Usage:
 from __future__ import annotations
 
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 import joblib
@@ -298,6 +299,7 @@ def main() -> None:
     plt.close(fig)
 
     metrics = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "best_model": best_name,
         "n_train": int(len(X_train)),
         "n_test": int(len(X_test)),
